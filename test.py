@@ -18,7 +18,7 @@ class Test(commands.Cog):
         if ctx.invoked_subcommand is None:
             await ctx.send("Invalid command passed.  Use !help.")
 
-    @utils.command(aliases=["stol"])
+    @test.command()
     async def ping(self, ctx, params):
         """
         Converts string to long
