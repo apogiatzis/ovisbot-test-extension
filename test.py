@@ -19,9 +19,9 @@ class Test(commands.Cog):
             await ctx.send("Invalid command passed.  Use !help.")
 
     @test.command()
-    async def ping(self, ctx, params):
+    async def ping(self, ctx):
         """
-        Converts string to long
+        Ping pong
         """
         await ctx.send("pong...")
 
